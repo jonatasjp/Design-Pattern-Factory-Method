@@ -3,7 +3,7 @@ package implementacao;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PessoaDAO extends DAO<Pessoa>{
+public class PessoaDAO implements InterfaceDAO<Pessoa>{
 
 	@Override
 	public void salvar(Pessoa entidade) {

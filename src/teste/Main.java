@@ -16,5 +16,6 @@ public class Main {
 		
 		pessoaService.fazAlgumaCoisa(pessoa);
 		
+		System.out.println(pessoaService.buscarTodos());
 	}
 }

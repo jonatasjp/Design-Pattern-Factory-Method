@@ -2,15 +2,15 @@ package implementacao;
 
 public class PessoaService extends Service<Pessoa>{
 
-	private DAO<Pessoa> pessoaDAO;
+	private InterfaceDAO<Pessoa> pessoaDAO;
 	
 	@Override
-	public DAO<Pessoa> getDao() {
+	public InterfaceDAO<Pessoa> getDao() {
 		if(pessoaDAO == null) {
 			pessoaDAO = new PessoaDAO();
 		}
 		
-		return new PessoaDAO();
+		return pessoaDAO;
 	}
 	
 	public void inserir(Pessoa pessoa) {

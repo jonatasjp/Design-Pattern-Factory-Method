@@ -2,7 +2,7 @@ package implementacao;
 
 import java.util.List;
 
-public interface InterfaceDAO<T> {
+public interface InterfaceDAO<T extends Entidade> {
 	
 	public void salvar(T entidade);
 	
